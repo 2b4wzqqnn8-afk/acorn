@@ -1,0 +1,1558 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://acorn.utoronto.ca/sws/#/ -->
+<html lang="en-CA"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Solid";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Regular";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Light";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Thin";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-counter-scale, 0.25));
+          transform: scale(var(--fa-counter-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  -webkit-transform: scale(var(--fa-layers-scale, 0.25));
+          transform: scale(var(--fa-layers-scale, 0.25));
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(var(--fa-li-width, 2em) * -1);
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  -webkit-animation-name: fa-beat;
+          animation-name: fa-beat;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  -webkit-animation-name: fa-bounce;
+          animation-name: fa-bounce;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  -webkit-animation-name: fa-fade;
+          animation-name: fa-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  -webkit-animation-name: fa-beat-fade;
+          animation-name: fa-beat-fade;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+          animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  -webkit-animation-name: fa-flip;
+          animation-name: fa-flip;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, ease-in-out);
+          animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  -webkit-animation-name: fa-shake;
+          animation-name: fa-shake;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-delay: var(--fa-animation-delay, 0s);
+          animation-delay: var(--fa-animation-delay, 0s);
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 2s);
+          animation-duration: var(--fa-animation-duration, 2s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, linear);
+          animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  -webkit-animation-name: fa-spin;
+          animation-name: fa-spin;
+  -webkit-animation-direction: var(--fa-animation-direction, normal);
+          animation-direction: var(--fa-animation-direction, normal);
+  -webkit-animation-duration: var(--fa-animation-duration, 1s);
+          animation-duration: var(--fa-animation-duration, 1s);
+  -webkit-animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+          animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  -webkit-animation-timing-function: var(--fa-animation-timing, steps(8));
+          animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    -webkit-animation-delay: -1ms;
+            animation-delay: -1ms;
+    -webkit-animation-duration: 1ms;
+            animation-duration: 1ms;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+@-webkit-keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  45% {
+    -webkit-transform: scale(var(--fa-beat-scale, 1.25));
+            transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@-webkit-keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    -webkit-transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+            transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    -webkit-transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+            transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    -webkit-transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+            transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    -webkit-transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+            transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    -webkit-transform: scale(1, 1) translateY(0);
+            transform: scale(1, 1) translateY(0);
+  }
+}
+@-webkit-keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@-webkit-keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(var(--fa-beat-fade-scale, 1.125));
+            transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@-webkit-keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    -webkit-transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+            transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@-webkit-keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@keyframes fa-shake {
+  0% {
+    -webkit-transform: rotate(-15deg);
+            transform: rotate(-15deg);
+  }
+  4% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  8%, 24% {
+    -webkit-transform: rotate(-18deg);
+            transform: rotate(-18deg);
+  }
+  12%, 28% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+  }
+  16% {
+    -webkit-transform: rotate(-22deg);
+            transform: rotate(-22deg);
+  }
+  20% {
+    -webkit-transform: rotate(22deg);
+            transform: rotate(22deg);
+  }
+  32% {
+    -webkit-transform: rotate(-12deg);
+            transform: rotate(-12deg);
+  }
+  36% {
+    -webkit-transform: rotate(12deg);
+            transform: rotate(12deg);
+  }
+  40%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  -webkit-transform: rotate(var(--fa-rotate-angle, none));
+          transform: rotate(var(--fa-rotate-angle, none));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse,
+.fa-duotone.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <!-- Google Tag Manager -->
+    <script async="" src="./Dashboard - ACORN_files/analytics.js.download"></script><script type="text/javascript" async="" src="./Dashboard - ACORN_files/ga.js.download"></script><script type="text/javascript" async="" src="./Dashboard - ACORN_files/js"></script><script async="" src="./Dashboard - ACORN_files/gtm.js.download"></script><script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-WZ9TXTW');</script>
+    <!-- End Google Tag Manager -->
+
+    <script>
+        function myAccessibility(){
+            var acornClassic = document.getElementsByClassName('acorn-classic');
+            if(acornClassic.length > 0){
+                setRole();
+            }
+        }
+
+        function setRole(){
+            var input = document.getElementsByTagName('input');
+
+            acornClassic[0].setAttribute("role", "main");
+
+            for(var i=0; i<input.length; i++){
+                input[i].setAttribute("role", "form");
+            }
+        };
+    </script>
+
+    <title data-ng-bind="pageTitle">Dashboard - ACORN</title>
+    <!--<base href="/sws/">--><base href=".">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link rel="shortcut icon" href="https://acorn.utoronto.ca/sws/assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://acorn.utoronto.ca/sws/assets/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://acorn.utoronto.ca/sws/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://acorn.utoronto.ca/sws/assets/images/favicon/favicon-16x16.png">
+
+    <link rel="manifest" href="https://acorn.utoronto.ca/sws/assets/images/favicon/site.webmanifest" crossorigin="use-credentials">
+    <link rel="mask-icon" href="https://acorn.utoronto.ca/sws/assets/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Import moneris file -->
+    <script src="./Dashboard - ACORN_files/chkt_v2.00.js.download"></script>
+<link rel="stylesheet" href="./Dashboard - ACORN_files/styles.48a2f569b3f521d5.css"><style type="text/css"></style><style>
+
+
+
+
+
+
+
+
+
+
+
+#acorn-nav-top[_ngcontent-ng-c710828257] {
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 60px;
+  margin: 0;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  background: #013a6f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   img#standard[_ngcontent-ng-c710828257] {
+  display: block;
+  width: 110px;
+  height: 40px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   a[_ngcontent-ng-c710828257] {
+  color: #fff;
+  text-decoration-line: none;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   a#acorn-title[_ngcontent-ng-c710828257] {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px #000000;
+  margin-left: 4.5rem;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   a.top-nav-link[_ngcontent-ng-c710828257] {
+  transition: all 0.3s ease-in-out;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   a.top-nav-link[_ngcontent-ng-c710828257]:hover, #acorn-nav-top[_ngcontent-ng-c710828257]   a.top-nav-link[_ngcontent-ng-c710828257]:focus {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   a.top-nav-link[_ngcontent-ng-c710828257]:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   [class^=icon-][_ngcontent-ng-c710828257]:before, #acorn-nav-top[_ngcontent-ng-c710828257]   [class*=" icon-"][_ngcontent-ng-c710828257]:before {
+  margin: 0;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .caret[_ngcontent-ng-c710828257] {
+  position: absolute;
+  top: 50%;
+  right: -17px;
+  margin-top: -3px;
+  border-width: 5px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #last-name-caret[_ngcontent-ng-c710828257] {
+  white-space: nowrap;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257] {
+  padding: 0;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .header-button[_ngcontent-ng-c710828257]   button[_ngcontent-ng-c710828257] {
+  position: relative;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .header-button[_ngcontent-ng-c710828257]   button[_ngcontent-ng-c710828257]   .acorn-btn-icon[_ngcontent-ng-c710828257] {
+  margin: 0;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .acorn-btn[_ngcontent-ng-c710828257] {
+  margin-right: 1.5rem;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .tool-badge[_ngcontent-ng-c710828257] {
+  cursor: pointer;
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  width: 22px;
+  height: 22px;
+  font-size: 1.2rem;
+  background-color: #1695f0;
+  border-radius: 50%;
+  border: 1px solid #013a6f;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .tool-badge[_ngcontent-ng-c710828257]   .badge-num[_ngcontent-ng-c710828257] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .header-username[_ngcontent-ng-c710828257] {
+  line-height: 1;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257]   .header-username[_ngcontent-ng-c710828257]   .fa-caret-down[_ngcontent-ng-c710828257] {
+  margin-left: 1rem;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container[_ngcontent-ng-c710828257] {
+  margin: 0;
+  border-radius: 0 0 0 4px;
+  background: #000;
+  opacity: 0.85;
+  inset: 0px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container.dropdown-menu[_ngcontent-ng-c710828257] {
+  top: 20px !important;
+  right: -50px !important;
+  bottom: initial;
+  left: initial;
+  float: none;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container[_ngcontent-ng-c710828257]   li[_ngcontent-ng-c710828257]   a[_ngcontent-ng-c710828257] {
+  min-width: 130px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container[_ngcontent-ng-c710828257]   li[_ngcontent-ng-c710828257]   a[_ngcontent-ng-c710828257]:hover, #acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container[_ngcontent-ng-c710828257]   li[_ngcontent-ng-c710828257]   a[_ngcontent-ng-c710828257]:focus {
+  background-color: #000;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   #user-profile-menu-container[_ngcontent-ng-c710828257]   li[_ngcontent-ng-c710828257]   a[_ngcontent-ng-c710828257]   i[_ngcontent-ng-c710828257] {
+  padding-right: 3px;
+}
+#acorn-nav-top[_ngcontent-ng-c710828257]   .tooltip.bs-tooltip-bottom[_ngcontent-ng-c710828257] {
+  left: -8px !important;
+}
+
+#peak-load-modal[_ngcontent-ng-c710828257]   h3[_ngcontent-ng-c710828257] {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+#peak-load-modal[_ngcontent-ng-c710828257]   p[_ngcontent-ng-c710828257] {
+  margin-bottom: 1.5rem;
+}
+
+#peak-load-modal[_ngcontent-ng-c710828257]   ul[_ngcontent-ng-c710828257] {
+  list-style-type: disc;
+  margin-bottom: 1.5rem;
+}
+
+#peak-load-modal[_ngcontent-ng-c710828257]   ul[_ngcontent-ng-c710828257]   li[_ngcontent-ng-c710828257] {
+  margin: 0.5rem 0;
+}
+
+.notification-slide-panel[_ngcontent-ng-c710828257] {
+  position: fixed;
+  top: 60px; 
+
+  right: -300px; 
+
+  width: 300px;
+  height: calc(100% - 60px);
+  background-color: #f4f4f4;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  transition: right 0.5s ease;
+  z-index: 1000;
+}
+.notification-slide-panel.open[_ngcontent-ng-c710828257] {
+  right: 0; 
+
+}
+
+@media screen and (max-width: 768px) {
+  #acorn-nav-top[_ngcontent-ng-c710828257] {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  #acorn-nav-top[_ngcontent-ng-c710828257]   .user-controls[_ngcontent-ng-c710828257] {
+    padding: 0 0.5rem 0 1rem;
+  }
+}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+#notification-body[_ngcontent-ng-c1597331285] {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .acorn-notice-margin[_ngcontent-ng-c1597331285] {
+  margin-bottom: 1rem;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-header[_ngcontent-ng-c1597331285] {
+  background-color: #ffffff;
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  font-size: 16px;
+  font-weight: bold;
+  width: 300px;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-header[_ngcontent-ng-c1597331285]   a[_ngcontent-ng-c1597331285] {
+  cursor: pointer;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-item[_ngcontent-ng-c1597331285] {
+  position: relative;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-image[_ngcontent-ng-c1597331285] {
+  background: #38a7c0 url('academic.959ecae91702682e.png') no-repeat 5px 50%;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-course-enrollment[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-exam[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-upcoming-key-date[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-program-enrolment[_ngcontent-ng-c1597331285] {
+  background: #3ea7be;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-financial-action[_ngcontent-ng-c1597331285] {
+  background: #25986e;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-life[_ngcontent-ng-c1597331285] {
+  background: #6E4DBC;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-personal[_ngcontent-ng-c1597331285] {
+  background-color: #3A3C39;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-course-enrollment[_ngcontent-ng-c1597331285]   .course-enrollment-image[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-upcoming-key-date[_ngcontent-ng-c1597331285]   .upcoming-key-date-image[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-program-enrolment[_ngcontent-ng-c1597331285]   .program-enrolment-image[_ngcontent-ng-c1597331285], #notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-exam[_ngcontent-ng-c1597331285]   .exam-image[_ngcontent-ng-c1597331285] {
+  background: url('academic.959ecae91702682e.png') no-repeat 6px 50%;
+  width: 40px;
+  height: 100%;
+  position: absolute;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-financial-action[_ngcontent-ng-c1597331285]   .financial-action-image[_ngcontent-ng-c1597331285] {
+  background: url('menu_icons.4c5b9dec6116f3e1.png') no-repeat -35px 50%;
+  width: 20px;
+  height: 100%;
+  position: absolute;
+  left: 10px;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-life[_ngcontent-ng-c1597331285]   .life-image[_ngcontent-ng-c1597331285] {
+  background: url('menu_icons.4c5b9dec6116f3e1.png') no-repeat -65px 50%;
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  left: 8px;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-personal[_ngcontent-ng-c1597331285]   .icon-user[_ngcontent-ng-c1597331285] {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 25px;
+  height: 100%;
+  position: absolute;
+  left: 8px;
+  font-size: 18px;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .icon-user-disabled[_ngcontent-ng-c1597331285] {
+  display: none;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-system-log-image[_ngcontent-ng-c1597331285] {
+  background: #002a5c url('academic.959ecae91702682e.png') no-repeat 5px 50%;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-message[_ngcontent-ng-c1597331285] {
+  font-size: 1.4rem;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-border[_ngcontent-ng-c1597331285] {
+  border-top: 1px solid #e0e0e0;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-content[_ngcontent-ng-c1597331285]   .notification-info-field[_ngcontent-ng-c1597331285] {
+  margin: 1rem 0 0 0;
+  font-size: 1.4rem;
+  color: #666666;
+}
+#notification-body[_ngcontent-ng-c1597331285]   .notification-panel-footer[_ngcontent-ng-c1597331285] {
+  padding: 2rem 0 0 2rem;
+}</style><style>/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom mixins used throughout ACORN.
+ **/
+#acorn-nav-side .fa.fa-caret-right, #acorn-nav-side .fa.fa-caret-down {
+  float: right;
+  margin-right: 1.5rem;
+  margin-top: 1px;
+}
+#acorn-nav-side .nav-section-container li.currentPage a {
+  color: #ffffff;
+  font-weight: bold;
+}
+#acorn-nav-side .nav-section-container li.currentPage ul.subNav a {
+  color: #e5e5e5;
+  font-weight: normal;
+}</style><style>svg[_ngcontent-ng-c258678937]{vertical-align:-.125em}</style><style>.row[_ngcontent-ng-c4257419262] {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row[_ngcontent-ng-c4257419262]   .block-section[_ngcontent-ng-c4257419262] {
+  flex: 0 0 50%;
+}
+@media (min-width: 768px) {
+  .row[_ngcontent-ng-c4257419262]   .block-section[_ngcontent-ng-c4257419262] {
+    flex: 0 0 33.3333333333%;
+  }
+}
+@media (min-width: 992px) {
+  .row[_ngcontent-ng-c4257419262]   .block-section[_ngcontent-ng-c4257419262] {
+    flex: 1 0 0;
+  }
+}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+.checklist-mode[_ngcontent-ng-c4269405921] {
+  position: relative;
+  width: 100%;
+  top: 60px;
+  right: 0;
+  left: 0;
+  padding-bottom: 1rem;
+  background: #013a6f;
+}
+
+.flex-item.checklist-reminder-notification[_ngcontent-ng-c4269405921] {
+  padding: 0.5rem 1rem 0.5rem 0.5rem;
+  margin: auto 2rem;
+  text-align: start;
+}
+.flex-item.checklist-reminder-notification[_ngcontent-ng-c4269405921]   a[_ngcontent-ng-c4269405921] {
+  display: inline-block;
+  color: #003F8C !important;
+  text-decoration: underline;
+}
+.flex-item.checklist-reminder-notification[_ngcontent-ng-c4269405921]   a[_ngcontent-ng-c4269405921]:hover {
+  color: #002A5C !important;
+}
+.flex-item.checklist-reminder-notification[_ngcontent-ng-c4269405921]:hover {
+  background-color: #f2a2a2;
+}
+
+@media screen and (max-width: 767px) {
+  .flex-item.checklist-reminder-notification[_ngcontent-ng-c4269405921] {
+    margin: auto 1rem;
+  }
+}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .dashboard-container[_ngcontent-ng-c1489244145] {
+    margin-bottom: 2rem;
+  }
+}</style><style>/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom mixins used throughout ACORN.
+ **/
+.notification-container.acorn-toast-container .acorn-notice {
+  margin: 0;
+}
+
+.notification-container .container-fluid {
+  padding: 0;
+}
+.notification-container .container-fluid.info-notice-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.notification-container .container-fluid.info-notice-container:last-child {
+  margin-bottom: 2rem;
+}
+.notification-container .action-notice-container:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.notification-container .action-notice-container:last-child {
+  margin-bottom: 2rem;
+}
+.notification-container .notification-expand-all-toggle {
+  color: #0955B2;
+  padding: 1rem 0 2rem 0;
+}
+.notification-container .notification-expand-all-toggle a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .notification-container {
+    margin-bottom: 2rem;
+  }
+  .notification-container .container-fluid.info-notice-container:first-child {
+    margin-top: 1rem;
+  }
+  .notification-container .container-fluid.info-notice-container:last-child {
+    margin-bottom: 0;
+  }
+  .notification-container .action-notice-container:first-child {
+    margin-top: 1rem;
+  }
+  .notification-container .action-notice-container:last-child {
+    margin-bottom: 0;
+  }
+}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+.calendar[_ngcontent-ng-c882718456]   .flex-display[_ngcontent-ng-c882718456] {
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+.calendar[_ngcontent-ng-c882718456]   .flex-display[_ngcontent-ng-c882718456]   .flex-item[_ngcontent-ng-c882718456] {
+  margin: 0;
+  padding: 0 0 0 1.5rem;
+}
+.calendar[_ngcontent-ng-c882718456]   .flex-display[_ngcontent-ng-c882718456]   .flex-item[_ngcontent-ng-c882718456]:first-child {
+  padding: 0;
+}
+.calendar[_ngcontent-ng-c882718456]   .date-calendar[_ngcontent-ng-c882718456] {
+  width: 55px;
+  text-align: center;
+}
+.calendar[_ngcontent-ng-c882718456]   .date-calendar[_ngcontent-ng-c882718456]   .month[_ngcontent-ng-c882718456] {
+  padding: 0.2rem;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 11px;
+  color: #ffffff;
+  background-color: #7199c1;
+}
+.calendar[_ngcontent-ng-c882718456]   .date-calendar[_ngcontent-ng-c882718456]   .day-container[_ngcontent-ng-c882718456] {
+  padding: 0.2rem;
+  background-color: #e5e5e5;
+}
+.calendar[_ngcontent-ng-c882718456]   .date-calendar[_ngcontent-ng-c882718456]   .day-container[_ngcontent-ng-c882718456]   .day[_ngcontent-ng-c882718456] {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 17px;
+}
+.calendar[_ngcontent-ng-c882718456]   .date-calendar[_ngcontent-ng-c882718456]   .day-container[_ngcontent-ng-c882718456]   .day-of-week[_ngcontent-ng-c882718456] {
+  font-size: 11px;
+  line-height: 11px;
+}
+.calendar[_ngcontent-ng-c882718456]   .todays-events[_ngcontent-ng-c882718456] {
+  flex-grow: 1;
+  -webkit-flex-grow: 1;
+}
+.calendar[_ngcontent-ng-c882718456]   .todays-events[_ngcontent-ng-c882718456]   .event[_ngcontent-ng-c882718456] {
+  border-top: 1px solid #808080;
+  margin-top: 1rem;
+  padding: 1rem 1rem 0;
+}
+.calendar[_ngcontent-ng-c882718456]   .todays-events[_ngcontent-ng-c882718456]   .event[_ngcontent-ng-c882718456]:first-child {
+  border: none;
+  margin: 0;
+  padding: 0 1rem;
+}
+.calendar[_ngcontent-ng-c882718456]   .todays-events[_ngcontent-ng-c882718456]   .event[_ngcontent-ng-c882718456]   .course-exam[_ngcontent-ng-c882718456] {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .calendar[_ngcontent-ng-c882718456]   .flex-display[_ngcontent-ng-c882718456] {
+    margin-bottom: 0;
+  }
+}</style><style>/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom mixins used throughout ACORN.
+ **/
+.profile-checklist-container h3 {
+  margin-bottom: 2rem;
+}
+.profile-checklist-container ul.profile-checklist-items {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+.profile-checklist-container ul.profile-checklist-items:last-child {
+  margin-bottom: 0;
+}
+.profile-checklist-container .checklist-notice-block .acorn-notice {
+  margin: 0 !important;
+}
+.profile-checklist-container .checklist-item-block {
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+}
+.profile-checklist-container .checklist-item-block .fa-stack {
+  width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .checklist-item-block {
+    margin-left: 1rem;
+  }
+}</style><style>/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom mixins used throughout ACORN.
+ **/
+.mat-mdc-card {
+  padding: 2rem;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: #ffffff;
+  color: #333333;
+}
+.mat-mdc-card .mat-mdc-card-header {
+  margin-bottom: 2rem;
+  padding: 0;
+  display: block;
+}
+.mat-mdc-card .mat-mdc-card-content {
+  flex: 1;
+  margin-bottom: 0;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+.mat-mdc-card .mat-mdc-card-actions {
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+.mat-mdc-card .mat-mdc-card-actions.mdc-card__actions {
+  min-height: 0;
+  padding: 0;
+  justify-content: right;
+}
+.mat-mdc-card .mat-mdc-card-actions a {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .mat-mdc-card {
+    padding: 1rem;
+  }
+  .mat-mdc-card .mat-mdc-card-header {
+    margin-bottom: 0;
+  }
+  .mat-mdc-card .mat-mdc-card-content {
+    margin: -1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    overflow-x: hidden;
+  }
+  .mat-mdc-card .mat-mdc-card-content .acorn-notice {
+    margin: 0;
+  }
+  .mat-mdc-card .mat-mdc-card-actions {
+    margin-top: 2rem;
+  }
+  .mat-mdc-card .mat-mdc-card-actions.mdc-card__actions {
+    display: block;
+  }
+  .mat-mdc-card .mat-mdc-card-actions a {
+    margin-left: 0;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.4rem;
+  }
+}</style><style>.mdc-card{display:flex;flex-direction:column;box-sizing:border-box}.mdc-card::after{position:absolute;box-sizing:border-box;width:100%;height:100%;top:0;left:0;border:1px solid rgba(0,0,0,0);border-radius:inherit;content:"";pointer-events:none;pointer-events:none}@media screen and (forced-colors: active){.mdc-card::after{border-color:CanvasText}}.mdc-card--outlined::after{border:none}.mdc-card__content{border-radius:inherit;height:100%}.mdc-card__media{position:relative;box-sizing:border-box;background-repeat:no-repeat;background-position:center;background-size:cover}.mdc-card__media::before{display:block;content:""}.mdc-card__media:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.mdc-card__media:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.mdc-card__media--square::before{margin-top:100%}.mdc-card__media--16-9::before{margin-top:56.25%}.mdc-card__media-content{position:absolute;top:0;right:0;bottom:0;left:0;box-sizing:border-box}.mdc-card__primary-action{display:flex;flex-direction:column;box-sizing:border-box;position:relative;outline:none;color:inherit;text-decoration:none;cursor:pointer;overflow:hidden}.mdc-card__primary-action:first-child{border-top-left-radius:inherit;border-top-right-radius:inherit}.mdc-card__primary-action:last-child{border-bottom-left-radius:inherit;border-bottom-right-radius:inherit}.mdc-card__actions{display:flex;flex-direction:row;align-items:center;box-sizing:border-box;min-height:52px;padding:8px}.mdc-card__actions--full-bleed{padding:0}.mdc-card__action-buttons,.mdc-card__action-icons{display:flex;flex-direction:row;align-items:center;box-sizing:border-box}.mdc-card__action-icons{color:rgba(0, 0, 0, 0.6);flex-grow:1;justify-content:flex-end}.mdc-card__action-buttons+.mdc-card__action-icons{margin-left:16px;margin-right:0}[dir=rtl] .mdc-card__action-buttons+.mdc-card__action-icons,.mdc-card__action-buttons+.mdc-card__action-icons[dir=rtl]{margin-left:0;margin-right:16px}.mdc-card__action{display:inline-flex;flex-direction:row;align-items:center;box-sizing:border-box;justify-content:center;cursor:pointer;user-select:none}.mdc-card__action:focus{outline:none}.mdc-card__action--button{margin-left:0;margin-right:8px;padding:0 8px}[dir=rtl] .mdc-card__action--button,.mdc-card__action--button[dir=rtl]{margin-left:8px;margin-right:0}.mdc-card__action--button:last-child{margin-left:0;margin-right:0}[dir=rtl] .mdc-card__action--button:last-child,.mdc-card__action--button:last-child[dir=rtl]{margin-left:0;margin-right:0}.mdc-card__actions--full-bleed .mdc-card__action--button{justify-content:space-between;width:100%;height:auto;max-height:none;margin:0;padding:8px 16px;text-align:left}[dir=rtl] .mdc-card__actions--full-bleed .mdc-card__action--button,.mdc-card__actions--full-bleed .mdc-card__action--button[dir=rtl]{text-align:right}.mdc-card__action--icon{margin:-6px 0;padding:12px}.mdc-card__action--icon:not(:disabled){color:rgba(0, 0, 0, 0.6)}.mat-mdc-card{border-radius:var(--mdc-elevated-card-container-shape);background-color:var(--mdc-elevated-card-container-color);border-width:0;border-style:solid;border-color:var(--mdc-elevated-card-container-color);box-shadow:var(--mdc-elevated-card-container-elevation);--mdc-elevated-card-container-shape:4px;--mdc-outlined-card-container-shape:4px;--mdc-outlined-card-outline-width:1px}.mat-mdc-card .mdc-card::after{border-radius:var(--mdc-elevated-card-container-shape)}.mat-mdc-card-outlined{border-width:var(--mdc-outlined-card-outline-width);border-style:solid;border-color:var(--mdc-outlined-card-outline-color);border-radius:var(--mdc-outlined-card-container-shape);background-color:var(--mdc-outlined-card-container-color);box-shadow:var(--mdc-outlined-card-container-elevation)}.mat-mdc-card-outlined .mdc-card::after{border-radius:var(--mdc-outlined-card-container-shape)}.mat-mdc-card-title{font-family:var(--mat-card-title-text-font);line-height:var(--mat-card-title-text-line-height);font-size:var(--mat-card-title-text-size);letter-spacing:var(--mat-card-title-text-tracking);font-weight:var(--mat-card-title-text-weight)}.mat-mdc-card-subtitle{color:var(--mat-card-subtitle-text-color);font-family:var(--mat-card-subtitle-text-font);line-height:var(--mat-card-subtitle-text-line-height);font-size:var(--mat-card-subtitle-text-size);letter-spacing:var(--mat-card-subtitle-text-tracking);font-weight:var(--mat-card-subtitle-text-weight)}.mat-mdc-card{position:relative}.mat-mdc-card-title,.mat-mdc-card-subtitle{display:block;margin:0}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle{padding:16px 16px 0}.mat-mdc-card-header{display:flex;padding:16px 16px 0}.mat-mdc-card-content{display:block;padding:0 16px}.mat-mdc-card-content:first-child{padding-top:16px}.mat-mdc-card-content:last-child{padding-bottom:16px}.mat-mdc-card-title-group{display:flex;justify-content:space-between;width:100%}.mat-mdc-card-avatar{height:40px;width:40px;border-radius:50%;flex-shrink:0;margin-bottom:16px;object-fit:cover}.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-avatar~.mat-mdc-card-header-text .mat-mdc-card-title{line-height:normal}.mat-mdc-card-sm-image{width:80px;height:80px}.mat-mdc-card-md-image{width:112px;height:112px}.mat-mdc-card-lg-image{width:152px;height:152px}.mat-mdc-card-xl-image{width:240px;height:240px}.mat-mdc-card-subtitle~.mat-mdc-card-title,.mat-mdc-card-title~.mat-mdc-card-subtitle,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-title,.mat-mdc-card-header .mat-mdc-card-header-text .mat-mdc-card-subtitle,.mat-mdc-card-title-group .mat-mdc-card-title,.mat-mdc-card-title-group .mat-mdc-card-subtitle{padding-top:0}.mat-mdc-card-content>:last-child:not(.mat-mdc-card-footer){margin-bottom:0}.mat-mdc-card-actions-align-end{justify-content:flex-end}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .academic-info[_ngcontent-ng-c3976302208] {
+    
+
+  }
+  .academic-info[_ngcontent-ng-c3976302208]   .non-sws-post[_ngcontent-ng-c3976302208] {
+    margin-bottom: 2rem;
+  }
+  .academic-info[_ngcontent-ng-c3976302208]   .courseInfo[_ngcontent-ng-c3976302208] {
+    background-color: #fafafa;
+  }
+  .academic-info[_ngcontent-ng-c3976302208]   .ac-section[_ngcontent-ng-c3976302208]    > div[_ngcontent-ng-c3976302208]:last-child    > div[_ngcontent-ng-c3976302208] {
+    margin: 0;
+  }
+  .academic-info[_ngcontent-ng-c3976302208]   .border-top-skip-first[_ngcontent-ng-c3976302208]:not(:first-child) {
+    padding-top: 0;
+  }
+  .academic-info[_ngcontent-ng-c3976302208]   .row.ac-section[_ngcontent-ng-c3976302208] {
+    margin-bottom: 0;
+  }
+}</style><style>
+
+
+
+
+
+
+
+
+
+
+
+.finance-info[_ngcontent-ng-c36869818]   .payment-btn-container[_ngcontent-ng-c36869818] {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .finance-info[_ngcontent-ng-c36869818]   .payment-btn-container[_ngcontent-ng-c36869818] {
+    display: block;
+  }
+}</style><style>/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom variables used throughout ACORN.
+ **/
+/***
+ * Custom mixins used throughout ACORN.
+ **/
+.acct-balance {
+  border-bottom: 1px dotted;
+}
+.acct-balance .debt {
+  color: #ee0000;
+}
+.acct-balance .credit {
+  color: #00820F;
+}
+.acct-balance .no-tooltip {
+  pointer-events: none;
+  color: #333333;
+  border-bottom: 0;
+}
+.acct-balance .no-tooltip:hover {
+  text-decoration: none;
+}
+
+.acct-balance-tp .tooltip-inner {
+  background-color: black;
+  min-width: 500px;
+}
+.acct-balance-tp .tooltip-inner a {
+  color: #31B9F4;
+}</style><style>.financial-arrangements[_ngcontent-ng-c1116450324]   .links[_ngcontent-ng-c1116450324] {
+  font-weight: bold;
+}
+.financial-arrangements[_ngcontent-ng-c1116450324]   a[_ngcontent-ng-c1116450324]:focus, .financial-arrangements[_ngcontent-ng-c1116450324]   a[_ngcontent-ng-c1116450324]:hover {
+  text-decoration: none;
+}</style><style>.financial-holds[_ngcontent-ng-c110238229]   .hold-tooltip[_ngcontent-ng-c110238229] {
+  font-weight: bold;
+}</style><style>.program-fees-tooltip[_ngcontent-ng-c1741987837] {
+  font-weight: bold;
+}</style><style>.ut-tooltip-container[_ngcontent-ng-c627025915]   .highlight[_ngcontent-ng-c627025915] {
+  border-bottom: 1px dotted;
+}
+.ut-tooltip-container[_ngcontent-ng-c627025915]   a[_ngcontent-ng-c627025915], .ut-tooltip-container[_ngcontent-ng-c627025915]   a[_ngcontent-ng-c627025915]:hover, .ut-tooltip-container[_ngcontent-ng-c627025915]   a[_ngcontent-ng-c627025915]:focus {
+  text-decoration: none;
+}</style></head>
+
+<body onload="myAccessibility()" id="acorn-body"><div><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="menu-icon"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="bell-icon"><path fill="currentColor" d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-down" class="svg-inline--fa fa-caret-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="down-caret-icon"><path fill="currentColor" d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="caret-up" class="svg-inline--fa fa-caret-up" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" id="up-caret-icon"><path fill="currentColor" d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-check" class="svg-inline--fa fa-circle-check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="success-icon"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-exclamation" class="svg-inline--fa fa-circle-exclamation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="warning-icon"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-info" class="svg-inline--fa fa-circle-info" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="information-icon"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-question" class="svg-inline--fa fa-circle-question" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="question-icon"><path fill="currentColor" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="triangle-exclamation" class="svg-inline--fa fa-triangle-exclamation" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="danger-icon"><path fill="currentColor" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"></path></symbol></svg><svg style="display: none;"><symbol aria-hidden="true" focusable="false" data-prefix="fas" data-icon="up-right-from-square" class="svg-inline--fa fa-up-right-from-square" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="external-link-icon"><path fill="currentColor" d="M352 0c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9L370.7 96 201.4 265.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L416 141.3l41.4 41.4c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V32c0-17.7-14.3-32-32-32H352zM80 32C35.8 32 0 67.8 0 112V432c0 44.2 35.8 80 80 80H400c44.2 0 80-35.8 80-80V320c0-17.7-14.3-32-32-32s-32 14.3-32 32V432c0 8.8-7.2 16-16 16H80c-8.8 0-16-7.2-16-16V112c0-8.8 7.2-16 16-16H192c17.7 0 32-14.3 32-32s-14.3-32-32-32H80z"></path></symbol></svg><svg style="display: none"><symbol id="close-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z"></path></symbol></svg></div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WZ9TXTW" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<div class="inactivity-timer-redirect">
+    <!--[if lt IE 11]>
+    <div class="ie_warning"><i></i><p>You are using an outdated browser or your browser is in "compatibility mode". <a rel="nofollow" href="http://browsehappy.com/">Upgrade your browser today</a>, <a rel="nofollow" href="http://www.sevenforums.com/tutorials/1196-internet-explorer-compatibility-view-turn-off.html">disable compatibility mode</a> or <a rel="nofollow" href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to order a transcript and better experience this site.</p></div>
+    <![endif]-->
+</div>
+
+<div class="acorn">
+    <top-nav _nghost-ng-c710828257="" ng-version="16.2.12"><skip-over-nav _ngcontent-ng-c710828257="" _nghost-ng-c3232422413=""><ul _ngcontent-ng-c3232422413="" id="scrollMain" aria-label="Skip to content"><li _ngcontent-ng-c3232422413=""><a _ngcontent-ng-c3232422413="" acornutscrollto="" href="javascript:void(0)" class="scroll-content sr-only sr-only-focusable">Skip to main content</a></li><li _ngcontent-ng-c3232422413="" class="hidden-xs"><a _ngcontent-ng-c3232422413="" acornutscrollto="" href="javascript:void(0)" class="scroll-content sr-only sr-only-focusable">Skip to navigation</a></li><li _ngcontent-ng-c3232422413="" class="visible-xs"><a _ngcontent-ng-c3232422413="" acornutscrollto="" href="javascript:void(0)" class="scroll-content sr-only sr-only-focusable">Skip to navigation</a></li></ul></skip-over-nav><header _ngcontent-ng-c710828257="" id="acorn-nav-top" role="banner" class="hidden-print"><div _ngcontent-ng-c710828257="" class="flex-display"><div _ngcontent-ng-c710828257="" class="visible-xs flex-item"><button _ngcontent-ng-c710828257="" aria-label="main navigation" class="btn-reset" aria-expanded="false"><img _ngcontent-ng-c710828257="" id="menu-btn" ngsrc="assets/images/top_navigation/menu_open.png" alt="Open Menu Button" height="15" width="18" loading="lazy" fetchpriority="auto" ng-img="true" src="./Dashboard - ACORN_files/menu_open.png"><!----><!----></button></div><div _ngcontent-ng-c710828257="" class="hidden-xs flex-item"><a _ngcontent-ng-c710828257="" href="https://www.utoronto.ca/" rel="noopener" title="Go to the University of Toronto Site"><img _ngcontent-ng-c710828257="" id="standard" src="./Dashboard - ACORN_files/uoft_logo_v2_2x.png" alt="Go to the University of Toronto Site"></a></div><div _ngcontent-ng-c710828257="" class="hidden-xs flex-item"><a _ngcontent-ng-c710828257="" id="acorn-title" href="https://acorn.utoronto.ca/sws/#/" class="top-nav-link">ACORN</a></div></div><div _ngcontent-ng-c710828257="" class="user-controls"><div _ngcontent-ng-c710828257="" class="flex-display"><div _ngcontent-ng-c710828257="" class="flex-item"><a _ngcontent-ng-c710828257="" class="acorn-btn" href="https://acorn.utoronto.ca/sws/#/help-and-feedback/contacts-resources"><i _ngcontent-ng-c710828257="" aria-hidden="true" class="fa fa-lg fa-handshake-o acorn-btn-icon hidden-xs"></i>Need Help?</a></div><div _ngcontent-ng-c710828257="" class="flex-item header-button"><button _ngcontent-ng-c710828257="" aria-label="notifications &amp; activity" class="acorn-btn no-wrap" aria-expanded="false"><i _ngcontent-ng-c710828257="" aria-hidden="true" class="fa fa-lg fa-bell acorn-btn-icon notification-bell"></i><div _ngcontent-ng-c710828257="" class="bell tool-badge"><div _ngcontent-ng-c710828257="" class="badge-num"> 9 </div></div><!----></button><!----><!----></div><div _ngcontent-ng-c710828257="" ngbdropdown="" class="flex-display flex-item dropdown"><a _ngcontent-ng-c710828257="" href="javascript:void(0)" ngbdropdowntoggle="" class="dropdown-toggle flex-item header-username top-nav-link" aria-expanded="false"> Rongjie Sun<span _ngcontent-ng-c710828257="" class="fa fa-caret-down"></span></a><ul _ngcontent-ng-c710828257="" id="user-profile-menu-container" ngbdropdownmenu="" role="menu" class="dropdown-menu"><li _ngcontent-ng-c710828257="" role="menuitem" ngbdropdownitem="" class="dropdown-item" tabindex="0"><a _ngcontent-ng-c710828257="" href="javascript:void(0)" class="top-nav-link"><i _ngcontent-ng-c710828257="" aria-hidden="true" class="fa fa-power-off"></i> Log Out </a></li></ul></div></div></div></header><div _ngcontent-ng-c710828257="" class="notification-slide-panel" inert=""><slide-notification-container _ngcontent-ng-c710828257="" _nghost-ng-c1597331285=""><div _ngcontent-ng-c1597331285="" id="notification-body"><div _ngcontent-ng-c1597331285="" class="notification-header"><span _ngcontent-ng-c1597331285="">Notifications &amp; Activity</span><a _ngcontent-ng-c1597331285="" class="view-all-notification-link pull-right btn-link" href="https://acorn.utoronto.ca/sws/#/notifications-and-activity">View Log</a></div><div _ngcontent-ng-c1597331285="" class="notification-content"><div _ngcontent-ng-c1597331285="" class="noBorder notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT334H1: Complex Variables</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT334H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 27 days ago. <span _ngcontent-ng-c1597331285="">(Dec 22, 2025)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT135H1: Calculus I</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT135H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 26 days ago. <span _ngcontent-ng-c1597331285="">(Dec 23, 2025)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>STA302H1: Methods of Data Analysis I</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for STA302H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 13 days ago. <span _ngcontent-ng-c1597331285="">(Jan 5, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT344H1: Introduction to Combinatorics</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT344H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 9 days ago. <span _ngcontent-ng-c1597331285="">(Jan 9, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>STA313H1: Data Visualization</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for STA313H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 6 days ago. <span _ngcontent-ng-c1597331285="">(Jan 12, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>STA302H1: Methods of Data Analysis I</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for STA302H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 3 days ago. <span _ngcontent-ng-c1597331285="">(Jan 15, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT344H1: Introduction to Combinatorics</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT344H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 3 days ago. <span _ngcontent-ng-c1597331285="">(Jan 15, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT334H1: Complex Variables</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT334H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 3 days ago. <span _ngcontent-ng-c1597331285="">(Jan 15, 2026)</span><!----></p></div></div></div><div _ngcontent-ng-c1597331285="" class="notification-border notification-course-enrollment"><div _ngcontent-ng-c1597331285="" class="notification-item"><div _ngcontent-ng-c1597331285="" class="course-enrollment-image"></div><div _ngcontent-ng-c1597331285="" class="exam-image"></div><div _ngcontent-ng-c1597331285="" class="program-enrolment-image"></div><div _ngcontent-ng-c1597331285="" class="upcoming-key-date-image"></div><div _ngcontent-ng-c1597331285="" class="financial-action-image"></div><div _ngcontent-ng-c1597331285="" class="life-image"></div><div _ngcontent-ng-c1597331285="" class="icon-user-disabled"></div><div _ngcontent-ng-c1597331285="" class="side-notification-body notification-style notification-style-unread"><!----><div _ngcontent-ng-c1597331285="" class="notification-message"><info-notice _ngcontent-ng-c1597331285=""><div><!----><!----><!----><!----><!----><!----><grade-posted-info-notice><div class="acorn-notice-margin"><strong>Grade Posted</strong></div><div class="acorn-notice-margin"> Your grade for <strong>MAT135H1: Calculus I</strong> has been posted. <a href="https://acorn.utoronto.ca/sws/#/history/academic" target="_self" class="not-underlined">View grade for MAT135H1</a>.
+</div></grade-posted-info-notice><!----><!----><!----></div></info-notice></div><!----><p _ngcontent-ng-c1597331285="" class="text-primary notification-info-field"> 3 days ago. <span _ngcontent-ng-c1597331285="">(Jan 15, 2026)</span><!----></p></div></div></div><!----></div><div _ngcontent-ng-c1597331285="" class="notification-panel-footer"><p _ngcontent-ng-c1597331285=""><!----> View your <a _ngcontent-ng-c1597331285="" href="https://acorn.utoronto.ca/sws/#/notifications-and-activity">Notifications &amp; Activity Log</a> for a full list of entries. </p></div></div></slide-notification-container></div><div _ngcontent-ng-c710828257=""><checklist-reminder-notification _ngcontent-ng-c710828257="" _nghost-ng-c4269405921=""><!----></checklist-reminder-notification></div><!----><!----></top-nav>
+    <div class="acorn-body-container">
+        <div class="side-nav-container">
+            <side-nav ng-version="16.2.12"><nav id="acorn-nav-side" role="navigation" tabindex="-1"><ul class="nav-section-container"><li class="nav-section dashboard"><ul class="nav-body"><li class="currentPage"><a href="https://acorn.utoronto.ca/sws/#/">Dashboard</a></li><li><a utpeakloadmode="" class="person auth" href="https://acorn.utoronto.ca/sws/#/profileAndSettings">Profile &amp; Settings</a><!----></li></ul></li><li class="nav-section academics"><div class="nav-header">ACADEMICS</div><ul class="nav-body"><li class="enrol expand-container"><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/enrol_and_manage">Enrol &amp; Manage<span id="enrol-manage-caret" class="fa fa-caret-right"></span></a><!----></acorn-block-tooltip><!----><ul class="subNav"><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/courses/0">Courses</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" title="Also known as &#39;Subject POSt&#39; and &#39;Program of Study&#39;" href="https://acorn.utoronto.ca/sws/#/programs">Programs</a><!----></acorn-block-tooltip><!----></li></ul></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" class="timetable" href="https://acorn.utoronto.ca/sws/#/timetable-and-exams">Timetable &amp; Exams</a><!----></acorn-block-tooltip><!----></li><li><a href="https://acorn.utoronto.ca/sws/#/accommodations">Academic Accommodations</a></li><li><a href="https://acorn.utoronto.ca/sws/#/absence-declaration">Absence Declaration</a></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/plan">Planning Tools</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="./Academic History - ACORN.html">Academic History</a>
+<!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/transcript">Transcript &amp; Enrolment Confirmation</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" class="graduation" href="https://acorn.utoronto.ca/sws/#/graduation">Graduation &amp; Convocation</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://q.utoronto.ca/" title="Go to the Quercus learning portal" sis-external-link="" _nghost-ng-c3329150311="" target="_blank" rel="noopener">Quercus <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a><!----></acorn-block-tooltip><!----></li></ul></li><li class="nav-section finances"><div class="nav-header">FINANCES</div><ul class="nav-body"><li class="financial expand-container"><a href="https://acorn.utoronto.ca/sws/#/financial_account">Financial Account<span id="finance-manage-caret" class="fa fa-caret-right"></span></a><ul class="subNav"><li><a utpeakloadmode="" href="https://acorn.utoronto.ca/sws/#/invoice-and-net-cost/invoice">Invoice &amp; Net Cost</a><!----></li><li><a utpeakloadmode="" href="https://acorn.utoronto.ca/sws/#/nonTuitionFees">Incidental Fees</a><!----></li><li><a href="https://acorn.utoronto.ca/sws/#/payment-history">Payment History</a></li><li><a href="https://acorn.utoronto.ca/sws/#/account-details">Account Details</a></li></ul></li><li><a class="fee_payment" href="https://acorn.utoronto.ca/sws/#/make_payment">Make a Payment</a></li><li><a utpeakloadmode="" href="https://acorn.utoronto.ca/sws/#/awards/find-grants-and-aid">Grants, Aid &amp; Awards</a><!----></li><li><a href="https://acorn.utoronto.ca/sws/#/tuition-fee-deferral">Tuition Fee Deferral</a></li><li><a class="tax" href="https://acorn.utoronto.ca/sws/#/tax">Tax Forms</a></li></ul></li><li class="nav-section student-life"><div class="nav-header">LIFE</div><ul class="nav-body"><li><a href="https://acorn.utoronto.ca/sws/#/life/health-and-wellness">Health &amp; Wellness</a></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/life/involvement">Involvement</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/life/career-planning">Jobs &amp; Career Planning</a><!----></acorn-block-tooltip><!----></li><li><a href="https://acorn.utoronto.ca/sws/#/life/accessibility">Accessibility &amp; Equity</a></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/life/international-opp">International Opportunities</a><!----></acorn-block-tooltip><!----></li><li><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a checklistblockmode="" href="https://acorn.utoronto.ca/sws/#/life/housing">Housing</a><!----></acorn-block-tooltip><!----></li><li><a href="https://acorn.utoronto.ca/sws/#/life/family-care">Family Care</a></li></ul></li></ul></nav></side-nav>
+        </div>
+        <div id="main-content" class="page-content-wrapper" tabindex="-1">
+            <main>
+                <!-- Routing View -->
+                <!----><div data-ng-view=""><dashboard _nghost-ng-c1489244145="" ng-version="16.2.12"><h1 _ngcontent-ng-c1489244145="" acornfocus="" class="page-title sr-only" tabindex="-1" style="display: inline-block; outline: rgb(0, 42, 92) solid 0.2rem;"> Dashboard <div _ngcontent-ng-c1489244145="" id="aodaNotifications"></div></h1><div _ngcontent-ng-c1489244145="" class="global-message"><acorn-global-message _ngcontent-ng-c1489244145="" _nghost-ng-c1303351410=""><!----></acorn-global-message></div><notification-container _ngcontent-ng-c1489244145=""><div id="dashboard-notification" class="notification-container acorn-toast-container"><!----><!----><!----></div></notification-container><!----><div _ngcontent-ng-c1489244145="" class="card-container dashboard-container"><calendar _ngcontent-ng-c1489244145="" class="card-block" _nghost-ng-c882718456=""><acorn-card _ngcontent-ng-c882718456="" class="card-block"><mat-card class="mat-mdc-card mdc-card"><mat-card-header class="mat-mdc-card-header"><div class="mat-mdc-card-header-text"></div><h2><div _ngcontent-ng-c882718456="" title=""> Today's Timetable </div></h2></mat-card-header><mat-card-content class="mat-mdc-card-content"><div _ngcontent-ng-c882718456="" content=""><div _ngcontent-ng-c882718456="" class="calendar"><!----><div _ngcontent-ng-c882718456=""><!----><div _ngcontent-ng-c882718456="" class="flex-display"><div _ngcontent-ng-c882718456="" class="flex-item"><div _ngcontent-ng-c882718456="" class="date-calendar"><div _ngcontent-ng-c882718456="" class="month"> JAN </div><div _ngcontent-ng-c882718456="" class="day-container"><div _ngcontent-ng-c882718456="" class="day"> 18 </div><div _ngcontent-ng-c882718456="" class="day-of-week"> SUN </div></div></div></div><!----><div _ngcontent-ng-c882718456="" class="flex-item"> You don't have any activities scheduled for today. <a _ngcontent-ng-c882718456="" href="https://www.utoronto.ca/events" sis-external-link="" _nghost-ng-c3329150311="" target="_blank" rel="noopener"> Here is what's on at <abbr _ngcontent-ng-c882718456="" title="University of Toronto">U of T</abbr> today <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a></div><!----></div><!----></div><!----></div></div></mat-card-content><mat-card-actions class="mat-mdc-card-actions mdc-card__actions"><div _ngcontent-ng-c882718456="" links=""><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a _ngcontent-ng-c882718456="" href="https://acorn.utoronto.ca/sws/#/timetable-and-exams" checklistblockmode="" class="calendar btn btn-primary">View Timetable</a><!----></acorn-block-tooltip><!----></div></mat-card-actions></mat-card></acorn-card></calendar><profile-checklist _ngcontent-ng-c1489244145="" class="card-block"><acorn-card class="card-block"><mat-card class="mat-mdc-card mdc-card"><mat-card-header class="mat-mdc-card-header"><div class="mat-mdc-card-header-text"></div><h2><div title=""> Profile Checklist </div></h2></mat-card-header><mat-card-content class="mat-mdc-card-content"><div content=""><div class="checklist-loading"><!----></div><div><div class="profile-checklist-container"><div><div><h3>Critical To-Dos</h3><!----><p> You have completed all of your critical to-dos. </p><!----><ul class="profile-checklist-items flex-item"><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/address/modify">Add a mailing and permanent address</a><span> (Complete)</span></span><!----><!----><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><!----><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/phone/modify">Add a primary phone number</a><span> (Complete)</span></span><!----><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><!----><!----><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/contact/emg/modify">Add an emergency contact</a><span> (Complete)</span></span><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/studentEquityCensus">Complete the <abbr title="University of Toronto">U of T</abbr> Student Equity Census</a><span> (Complete)</span></span><!----><!----><!----><!----></div></li><!----></ul><h3>Important To-Dos</h3><p> These to-dos are important, but they are not mandatory to complete. </p><!----><!----><ul class="profile-checklist-items flex-item"><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><i class="fa-icon fa fa-exclamation-circle"></i><!----><!----></span><!----><!----><!----><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/bank/modify">Add direct deposit information</a><span> (Incomplete)</span></span><!----><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><span><a href="https://tcard.utoronto.ca/get-your-utorid-tcard/" sis-external-link="" _nghost-ng-c3329150311="" target="_blank" rel="noopener">Verify your legal status <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a><span> (Complete)</span></span><!----><!----><!----><!----><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><span><a href="https://utorid.utoronto.ca/cgi-bin/utorid/activate.pl" sis-external-link="" _nghost-ng-c3329150311="" target="_blank" rel="noopener">Activate your UTORid <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a><span> (Complete)</span></span><!----><!----><!----><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><!----><!----><!----><span><a href="https://acorn.utoronto.ca/sws/#/profileAndSettings/sinNum/modify">Add your SIN or ITN to ACORN if you plan on filing taxes</a><span> (Complete)</span></span><!----></div></li><li><div class="checklist-item-block"><span aria-hidden="true" class="acorn-alerts alert-icon fa-stack"><!----><i class="fa-icon fa fa-check-circle"></i><!----></span><!----><!----><span><a href="https://tcard.utoronto.ca/get-your-utorid-tcard/" sis-external-link="" _nghost-ng-c3329150311="" target="_blank" rel="noopener">Pick up your TCard <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a><span> (Complete)</span></span><!----><!----><!----></div></li><!----></ul></div><!----><!----></div><!----><!----></div><!----><!----></div><!----></div></mat-card-content><mat-card-actions class="mat-mdc-card-actions mdc-card__actions"><div links=""></div></mat-card-actions></mat-card></acorn-card></profile-checklist><academics _ngcontent-ng-c1489244145="" class="card-block" _nghost-ng-c3976302208=""><acorn-card _ngcontent-ng-c3976302208="" class="card-block"><mat-card class="mat-mdc-card mdc-card"><mat-card-header class="mat-mdc-card-header"><div class="mat-mdc-card-header-text"></div><h2><div _ngcontent-ng-c3976302208="" title="" class="academics">Academics</div></h2></mat-card-header><mat-card-content class="mat-mdc-card-content"><div _ngcontent-ng-c3976302208="" content=""><div _ngcontent-ng-c3976302208="" class="academic-info"><start-time-info _ngcontent-ng-c3976302208="" _nghost-ng-c234098461=""><!----></start-time-info><div _ngcontent-ng-c3976302208="" class="degree-status-info"><div _ngcontent-ng-c3976302208="" class="row"><div _ngcontent-ng-c3976302208="" class="col-xs-12"><h3 _ngcontent-ng-c3976302208="" class="heading"> Degree Registration <span _ngcontent-ng-c3976302208=""><!---->Status<!----><!----></span></h3></div></div><div _ngcontent-ng-c3976302208="" class="row status-row ac-sub-section"><div _ngcontent-ng-c3976302208="" class="dashboard-reg-status col-md-9 col-xs-12"><reg-status _ngcontent-ng-c3976302208=""><div><div class="row"><div class="col-xs-8 col-md-6 title"><strong> ASPRGHBSC <span class="sessionDescr">2025-2026 Fall/Winter</span></strong><!----><!----></div><div class="col-xs-4 col-md-6 status ut-tooltip"><span _nghost-ng-c627025915="" aria-label="Your status for program ASPRGHBSC: A&amp;S Bachelor&#39;s Degree Program in 2025-2026 Fall/Winter is Registered"><div _ngcontent-ng-c627025915="" class="ut-tooltip-container"><div _ngcontent-ng-c627025915=""><!----><a _ngcontent-ng-c627025915="" href="javascript:void(0)" triggers="manual" class="highlight registered">Registered<!----></a><!----></div><!----><!----></div></span></div></div></div><!----></reg-status></div><!----></div><!----></div><div _ngcontent-ng-c3976302208="" class="non-sws-post"><!----></div><div _ngcontent-ng-c3976302208="" class="row ac-section"><div _ngcontent-ng-c3976302208="" class="col-xs-12"><h3 _ngcontent-ng-c3976302208="" class="heading"> Enrolled Courses: 2026 Winter </h3><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208="" class="noBorder"><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">MAT244H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Introduction to Ordinary Differential Equations</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208=""><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">ECO421H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Special Topics in Economics</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208=""><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">MAT136H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Calculus II</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208=""><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">STA347H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Probability</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208=""><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">ECO310H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Empirical Industrial Organization</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><div _ngcontent-ng-c3976302208="" class="border-top-skip-first enrolledCourses"><div _ngcontent-ng-c3976302208=""><div _ngcontent-ng-c3976302208="" class="courseInfo"><div _ngcontent-ng-c3976302208="" class="sub-heading"><strong _ngcontent-ng-c3976302208="">ENV200H1 S</strong></div><div _ngcontent-ng-c3976302208="" class="courseName">Assessing Global Change: Science and the Environment</div></div><div _ngcontent-ng-c3976302208="" class="clearBoth"></div></div></div><!----></div></div><!----><!----><!----></div></div></mat-card-content><mat-card-actions class="mat-mdc-card-actions mdc-card__actions"><div _ngcontent-ng-c3976302208="" links=""><acorn-block-tooltip _nghost-ng-c508354923=""><!----><a _ngcontent-ng-c3976302208="" href="https://acorn.utoronto.ca/sws/#/courses" checklistblockmode="" class="btn btn-primary">Manage Courses</a><!----></acorn-block-tooltip><!----></div></mat-card-actions></mat-card></acorn-card><!----></academics><!----><finances _ngcontent-ng-c1489244145="" class="card-block" _nghost-ng-c36869818=""><acorn-card _ngcontent-ng-c36869818="" class="card-block"><mat-card class="mat-mdc-card mdc-card"><mat-card-header class="mat-mdc-card-header"><div class="mat-mdc-card-header-text"></div><h2><div _ngcontent-ng-c36869818="" title="" class="finances">Finances</div></h2></mat-card-header><mat-card-content class="mat-mdc-card-content"><div _ngcontent-ng-c36869818="" content=""><div _ngcontent-ng-c36869818="" class="finance-info"><outstanding-admission-deposit _ngcontent-ng-c36869818="" _nghost-ng-c3431978665=""><!----></outstanding-admission-deposit><div _ngcontent-ng-c36869818="" class="account-container"><finance-card-fields _ngcontent-ng-c36869818="" _nghost-ng-c1504071700=""><account-balance _ngcontent-ng-c1504071700=""><div class="account-balance row"><div class="col-xs-12"><!----></div><div><div class="col-xs-8 col-md-6"><h3 class="heading">Account Balance</h3></div><div class="col-xs-4 col-md-6 balance text-right"><span _nghost-ng-c627025915="" class="acct-balance no-tooltip" aria-label="Your Account Balance is $0.00"><div _ngcontent-ng-c627025915="" class="ut-tooltip-container"><div _ngcontent-ng-c627025915=""><!----><a _ngcontent-ng-c627025915="" href="javascript:void(0)" triggers="manual" class="highlight">$0.00<!----></a><!----></div><!----><!----></div></span></div><div class="col-xs-12 subheading">  </div></div><!----></div></account-balance><tuition-estimate _ngcontent-ng-c1504071700="" _nghost-ng-c3336290607=""><div _ngcontent-ng-c3336290607="" class="tuition-estimate"><!----><!----><!----></div></tuition-estimate><!----><!----><ut-financial-arrangement _ngcontent-ng-c1504071700="" _nghost-ng-c1116450324=""><!----></ut-financial-arrangement><ut-financial-hold _ngcontent-ng-c1504071700="" _nghost-ng-c110238229=""><!----></ut-financial-hold><!----><ut-program-with-fees _ngcontent-ng-c1504071700="" _nghost-ng-c1741987837=""><!----></ut-program-with-fees></finance-card-fields><!----></div><!----><!----><div _ngcontent-ng-c36869818="" class="clear-both"></div><!----><div _ngcontent-ng-c36869818="" class="payment-btn-container"><a _ngcontent-ng-c36869818="" href="https://acorn.utoronto.ca/sws/#/invoice-and-net-cost/invoice" utpeakloadmode="" class="btn btn-primary">View Invoice</a><!----><!----><a _ngcontent-ng-c36869818="" href="https://acorn.utoronto.ca/sws/#/make_payment" class="btn btn-primary">Make a Payment</a></div><!----><div _ngcontent-ng-c36869818="" class="award border-top-skip-first"><div _ngcontent-ng-c36869818="" class="header"><h3 _ngcontent-ng-c36869818="" class="heading">Next Award Payment to You</h3></div><div _ngcontent-ng-c36869818="" utpeakloadmode=""><acorn-notice _ngcontent-ng-c36869818="" _nghost-ng-c1265912325=""><div _ngcontent-ng-c1265912325="" class="flex-display acorn-alerts acorn-notice alert-info"><div _ngcontent-ng-c1265912325="" class="flex-item alert-icon"><span _ngcontent-ng-c1265912325="" aria-hidden="true" class="fa-stack"><i _ngcontent-ng-c1265912325="" class="fa-bg fa fa-stack-1x fa-circle"></i><i _ngcontent-ng-c1265912325="" class="fa-icon fa fa-stack-1x fa-info-circle"></i></span></div><div _ngcontent-ng-c1265912325="" class="flex-item alert-body"><p _ngcontent-ng-c36869818=""> You currently have no upcoming award payments. Visit the <a _ngcontent-ng-c36869818="" href="https://acorn.utoronto.ca/sws/#/awards/find-awards">Find Awards page</a> to find awards you may be eligible for. </p></div><!----><!----></div></acorn-notice></div><!----><!----><div _ngcontent-ng-c36869818="" class="body"><!----></div></div></div></div></mat-card-content><mat-card-actions class="mat-mdc-card-actions mdc-card__actions"><div _ngcontent-ng-c36869818="" links=""><a _ngcontent-ng-c36869818="" href="https://acorn.utoronto.ca/sws/#/awards/my-awards" utpeakloadmode="" class="btn btn-primary">View My Awards</a><!----></div></mat-card-actions></mat-card></acorn-card></finances><!----></div></dashboard></div>
+            </main>
+            <page-footer _nghost-ng-c4257419262="" ng-version="16.2.12"><div _ngcontent-ng-c4257419262="" class="clearfix"></div><footer _ngcontent-ng-c4257419262="" id="acorn-footer" role="contentinfo"><div _ngcontent-ng-c4257419262="" class="container-fluid"><div _ngcontent-ng-c4257419262="" class="border">&nbsp;</div><nav _ngcontent-ng-c4257419262="" role="navigation" aria-label="footer" class="row"><div _ngcontent-ng-c4257419262="" id="dashboard" class="block-section"><span _ngcontent-ng-c4257419262="" class="foot-header">Dashboard &amp; Profile</span><div _ngcontent-ng-c4257419262="" class="block-content"><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/">Dashboard</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/profileAndSettings">Profile &amp; Settings</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/notifications-and-activity">Notifications &amp; Activity</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/auth/logout">Log Out</a></li></ul></div></div><div _ngcontent-ng-c4257419262="" id="academic" class="block-section"><div _ngcontent-ng-c4257419262=""><span _ngcontent-ng-c4257419262="" class="foot-header">Academics</span><div _ngcontent-ng-c4257419262="" class="block-content"><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/enrol_and_manage">Enrol &amp; Manage</a><ul _ngcontent-ng-c4257419262="" class="enrol"><li _ngcontent-ng-c4257419262="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/courses">Courses</a></li><li _ngcontent-ng-c4257419262="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/programs">Programs</a></li></ul></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/timetable-and-exams">Timetable &amp; Exams</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/accommodations">Academic Accommodations</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/absence-declaration">Absence Declaration</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/plan">Planning Tools</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/history/academic/">Academic History</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/transcript">Transcript &amp; Enrolment Confirmation</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/graduation">Graduation &amp; Convocation</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://q.utoronto.ca/" target="_blank" title="Go to the Quercus learning portal" sis-external-link="" _nghost-ng-c3329150311="" rel="noopener">Quercus <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a></li><!----></ul></div></div></div><div _ngcontent-ng-c4257419262="" class="clearfix visible-xs"></div><div _ngcontent-ng-c4257419262="" id="finance" class="block-section"><div _ngcontent-ng-c4257419262=""><span _ngcontent-ng-c4257419262="" class="foot-header">Finances</span><div _ngcontent-ng-c4257419262="" class="block-content"><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262="" class="financial"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/financial_account">Financial Account</a><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262="" utpeakloadmode="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/invoice-and-net-cost/invoice">Invoice &amp; Net Cost</a></li><!----><li _ngcontent-ng-c4257419262="" utpeakloadmode="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/nonTuitionFees">Incidental Fees</a></li><!----><li _ngcontent-ng-c4257419262="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/payment-history">Payment History</a></li><li _ngcontent-ng-c4257419262="" class="bullet"><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/account-details">Account Details</a></li></ul></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/make_payment">Make a Payment</a></li><li _ngcontent-ng-c4257419262="" utpeakloadmode=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/awards/find-grants-and-aid">Grants, Aid &amp; Awards</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/tuition-fee-deferral">Tuition Fee Deferral</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/tax">Tax Forms</a></li></ul></div></div></div><div _ngcontent-ng-c4257419262="" class="clearfix visible-sm"></div><div _ngcontent-ng-c4257419262="" id="life" class="block-section"><span _ngcontent-ng-c4257419262="" class="foot-header">Life</span><div _ngcontent-ng-c4257419262="" class="block-content"><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/health-and-wellness">Health &amp; Wellness</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/involvement">Involvement</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/career-planning">Jobs &amp; Career Planning</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/accessibility">Accessibility &amp; Equity</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/international-opp">International Opportunities</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/housing">Housing</a></li><!----><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/life/family-care">Family Care</a></li></ul></div></div><div _ngcontent-ng-c4257419262="" class="clearfix visible-xs"></div><div _ngcontent-ng-c4257419262="" id="information" class="block-section"><span _ngcontent-ng-c4257419262="" class="foot-header">Help &amp; Information</span><div _ngcontent-ng-c4257419262="" class="block-content"><ul _ngcontent-ng-c4257419262=""><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/help-and-feedback/contacts-resources">Need Help?</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/about">About</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/hours">Hours</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://acorn.utoronto.ca/sws/#/security">Security &amp; Privacy</a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="http://aoda.hrandequity.utoronto.ca/" target="_blank" rel="noopener" sis-external-link="" _nghost-ng-c3329150311="">Accessibility <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://help.acorn.utoronto.ca/" target="_blank" rel="noopener" sis-external-link="" _nghost-ng-c3329150311="">How to use ACORN <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a></li><li _ngcontent-ng-c4257419262=""><a _ngcontent-ng-c4257419262="" href="https://forms.office.com/r/6uLCFe97jf" target="_blank" rel="noopener" sis-external-link="" _nghost-ng-c3329150311="">Feedback <!----><sis-icon _ngcontent-ng-c3329150311="" name="external-link" _nghost-ng-c258678937=""><svg _ngcontent-ng-c258678937="" height="1em" viewBox="0 0 512 512" role="img" aria-label="(opens in a new window)"><use _ngcontent-ng-c258678937="" href="#external-link-icon"></use></svg><!----><!----><!----></sis-icon></a></li></ul></div></div></nav><div _ngcontent-ng-c4257419262="" class="row last"><div _ngcontent-ng-c4257419262="" class="col-xs-12"><div _ngcontent-ng-c4257419262="" class="text-center block-content"><div _ngcontent-ng-c4257419262="" class="acorn-logo"><img _ngcontent-ng-c4257419262="" src="./Dashboard - ACORN_files/logo_acorn.png" alt="Acorn"></div><div _ngcontent-ng-c4257419262="" class="uoft-footer">© 2026 University of Toronto</div><div _ngcontent-ng-c4257419262="" class="app-version"><strong _ngcontent-ng-c4257419262="">App Version:</strong><div _ngcontent-ng-c4257419262="" id="git-rev-sig">master@574a081</div></div></div></div></div></div></footer></page-footer>
+        </div>
+        <div id="side-nav-mask" class="visible-xs"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./Dashboard - ACORN_files/common.js.download"></script>
+<script type="text/javascript" src="./Dashboard - ACORN_files/analytics(1).js.download"></script>
+<script type="text/javascript" src="./Dashboard - ACORN_files/moment.js.download"></script>
+
+<script src="./Dashboard - ACORN_files/runtime.4729aa6365fabcd0.js.download" type="module"></script><script src="./Dashboard - ACORN_files/polyfills.87e3cfbcff28fe37.js.download" type="module"></script><script src="./Dashboard - ACORN_files/scripts.467c133dfaeb735f.js.download" defer=""></script><script src="./Dashboard - ACORN_files/main.b8d36cd1fa7e33e5.js.download" type="module"></script>
+
+
+</body></html>
