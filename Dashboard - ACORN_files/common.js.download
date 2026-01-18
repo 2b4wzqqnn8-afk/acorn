@@ -1,0 +1,275 @@
+var winpop = null;
+var winpop2 = null;
+
+function popup() {
+    basePopup(600,400,"resizable=1,menubar=1,scrollbars=1",true);
+}
+
+function check_submit_popup() {
+    popup();
+    return true;
+}
+
+function mapPopup() {
+    basePopup(1000, 800, "resizable=1,menubar=1,scrollbars=1", false);
+}
+
+/**
+*   Pops open a window of size width x height with the given options.
+*   If reuseWindow is true and an earlier popup window with the name 'popwin'
+*   is open, loads the page into the open window.  Otherwise, opens a new
+*   window called popwin2
+*   @height Height of the popup window
+*   @width  Width of the popup window
+*   @options Comma seperated options for the popup window
+*/
+function basePopup(width,height,options,reuseWindow) {
+
+    var left = (screen.width - width) / 2;
+    var top = (screen.height - height) / 2;
+
+    if (!reuseWindow) {
+        winpop2 = window.open('', 'popwin2',
+            'width='+width+',height='+height+',left='+left+',top='+top+','+options+'');
+        winpop2.focus();
+    } else {
+        if(!winpop || winpop.closed) {
+            winpop = window.open('', 'popwin',
+                'width='+width+',height='+height+',left='+left+',top='+top+','+options+'');
+        } else {
+              winpop.focus();
+        }
+    }
+}
+
+/**
+* Makes the CSS stylesheet indicated by styleName the current
+* stylesheet.  The styleName has to be one of  timetable-monochrome.css
+* or timetable-color.css
+* @param styleName The name of the CSS stylesheet to make active
+*/
+function switchTimetableStyle(styleName) {
+    var monoStyleTitle = "timetable-monochrome.css";
+    var colorStyleTitle = "timetable-color.css";
+    var ss = getAllSheets();
+    var monoStyle, colorStyle;
+
+    // Get references to the two stylesheets
+    for(i=0; i<ss.length; i++) {
+        if (ss[i].href) {
+           if (ss[i].href.endsWith(monoStyleTitle)) {
+              monoStyle = ss[i];
+           } else if (ss[i].href.endsWith(colorStyleTitle)) {
+              colorStyle = ss[i];
+           }
+        }
+    }
+
+    // Based on styleName, disable one and enable one
+    if (colorStyle && monoStyle) {
+        if (styleName.endsWith(monoStyleTitle)) {
+            colorStyle.disabled = true;
+            monoStyle.disabled = false;
+        } else if (styleName.endsWith(colorStyleTitle)) {
+            colorStyle.disabled = false;
+            monoStyle.disabled = true;
+        }
+    }
+}
+/**
+* Returns all the stylesheet's associated with the calling page
+* Taken from:
+*    http://www.howtocreate.co.uk/tutorials/index.php?tut=0&part=27
+* @return Returns all the stylesheet's associated with the calling page
+*/
+function getAllSheets() {
+  //if you want ICEbrowser's limited support, do it this way
+  if( !window.ScriptEngine && navigator.__ice_version ) {
+    //IE errors if it sees navigator.__ice_version when a window is closing
+    //window.ScriptEngine hides it from that
+    return document.styleSheets; }
+  if( document.getElementsByTagName ) {
+    //DOM browsers - get link and style tags
+    var Lt = document.getElementsByTagName('link');
+    var St = document.getElementsByTagName('style');
+  } else if( document.styleSheets && document.all ) {
+    //not all browsers that supply document.all supply document.all.tags
+    //but those that do and can switch stylesheets will also provide
+    //document.styleSheets (checking for document.all.tags produces errors [WHY?!])
+    var Lt = document.all.tags('LINK'), St = document.all.tags('STYLE');
+  } else { return []; } //lesser browser - return a blank array
+  //for all link tags ...
+  for( var x = 0, os = []; Lt[x]; x++ ) {
+    //check for the rel attribute to see if it contains 'style'
+    if( Lt[x].rel ) { var rel = Lt[x].rel;
+    } else if( Lt[x].getAttribute ) { var rel = Lt[x].getAttribute('rel');
+    } else { var rel = ''; }
+    if( typeof( rel ) == 'string' &&
+        rel.toLowerCase().indexOf('style') + 1 ) {
+      //fill os with linked stylesheets
+      os[os.length] = Lt[x];
+    }
+  }
+  //include all style tags too and return the array
+  for( var x = 0; St[x]; x++ ) { os[os.length] = St[x]; } return os;
+}
+
+function display_close(src) {
+  var txt = '<a href="javascript: self.close();"><img' +
+    ' width="75" height="13" src="' + src + '"' +
+    'border="0" hspace="5" alt="Close" /></a>';
+  document.write(txt);
+}
+
+function display_close_button(text) {
+  var txt = '<input type="button" \
+                    onClick="self.close();" \
+                    style="font-size: 10px" \
+                    class="button" \
+                    value="'+text+'"/>';
+  document.write(txt);
+}
+
+function display_print_button(text) {
+  var txt = '<input type="button" \
+                    onClick="window.print();" \
+                    style="font-size: 10px" \
+                    class="button" \
+                    value="'+text+'"/> ';
+  document.write(txt);
+}
+
+/**
+* @param showElem   Element containing the text which gives user an option to show
+* @param hideElem   Element containing the text which gives user an option to hide
+* @param targetElem Element that needs to be hide/shown
+* @return Returns false so screen view will not go to top by default
+*
+* Usage:
+*       <a href="#" onClick="return toggleTarget('elem1','elem2','elem3')">Show Stuff</a>
+*/
+function toggleTarget(showElem,hideElem,targetElem) {
+    var hide = document.getElementById(hideElem);
+    var show = document.getElementById(showElem);
+    var target = document.getElementById(targetElem);
+
+    // Show the conflicts table
+    if (hide.style.display == "none" || show.style.display == "") {
+        hide.style.display = "";
+        show.style.display = "none";
+        target.style.display = "";
+
+    // Hide the conflicts table
+    } else {
+        hide.style.display = "none";
+        show.style.display = "";
+        target.style.display = "none";
+    }
+    return false;
+}
+
+/*********************************************************************
+An extension of the String class taken from:
+   http://www.netxion.net/?Article_id=453054282
+
+Added to utils.js on January 21st, 2005
+
+***/
+/* alert(("Hello world!").endsWith("!")) */
+String.prototype.endsWith = function(sEnd) {
+    return (this.substr(this.length-sEnd.length)==sEnd);
+}
+
+/* alert(("Hello world!").startsWith("H")) */
+String.prototype.startsWith = function(sStart) {
+    return (this.substr(0,sStart.length)==sStart);
+}
+
+/* alert(("Hello world!  ").trim().replace(" ",".") */
+if(!String.prototype.trim){
+    String.prototype.trim = function() {
+        var b=0,e=this.length -1;
+        while(this.substr(b,1) == " ") b++;
+        while(this.substr(e,1) == " ") e--;
+        return this.substring(b,e+1);
+    }
+}
+/* alert(("Hello world!").toCharArray().join("\n")) */
+String.prototype.toCharArray = function() {
+    var arrRet = new Array();
+    for(var i=0;i<this.length;i++) arrRet.push(this.substr(i,1));
+    return arrRet;
+}
+
+/* alert(("Hello world!").reverse()); */
+String.prototype.reverse = function() {
+    var a = new Array();
+    for(var i=0;i<this.length;i++) a.push(this.substr(i,1));
+    return a.reverse().join("");
+}
+
+/**
+ * Checks or unchecks checkboxes that use indexed properties.
+ *
+ * @param formName <form> which contains the checkboxes
+ * @param objName Name of object which contains the indexed property
+ * @param propName Name of the property inside the object referenced by objName
+ * @param numIterations The number of iterations the loop that generates the
+ * checkboxes performs
+ * @checkValue Boolean value indicating whether to check or uncheck
+ */
+function setAllIndexedCheckBoxes(formName, objName, propName, numIterations, checkValue) {
+    if(!document.forms[formName])
+        return;
+    for (var i=0; i<numIterations; i++) {
+        var fieldName = objName + "[" + i + "]." + propName;
+        var objCheckBoxes = document.forms[formName].elements[fieldName];
+        if(objCheckBoxes) {
+            var countCheckBoxes = objCheckBoxes.length;
+            if(!countCheckBoxes) {
+                objCheckBoxes.checked = checkValue;
+            } else {
+                // set the check value for all check boxes
+                for(var i = 0; i < countCheckBoxes; i++)
+                    objCheckBoxes[i].checked = checkValue;
+            }
+        }
+    }
+}
+
+
+// Detects the enter key and if it is pressed, executes the fucntion referred
+// to by func by doing an eval on it.
+// Usage <input type="text" onKeyPress="checkEnter(event,'mycustomfunc()')"/>
+// where mycustomfunc() can be declared in your page
+// Motivation: http://jennifermadden.com/javascript/stringEnterKeyDetector.html
+function checkEnter(e,func){
+    var characterCode = (e && e.which) ? e.which : e.keyCode;
+
+    if(characterCode == 13){
+        eval(func);
+        return false;
+    }
+    else{
+        return true;
+    }
+}
+
+/** array functions taken from http://4umi.com/web/javascript/array.htm */
+// Array.unique( strict ) - Remove duplicate values
+Array.prototype.unique = function() {
+    var a = [], i, l = this.length;
+    for( i=0; i<l; i++ ) {
+        if( a.indexOf( this[i], 0) < 0 ) { a.push( this[i] ); }
+    }
+    return a;
+};
+
+// Array.indexOf( value, begin, strict ) - Return index of the first
+// element that matches value
+Array.prototype.indexOf = function( v, b, s ) {
+    for( var i = +b || 0, l = this.length; i < l; i++ ) {
+        if( this[i]===v || s && this[i]==v ) { return i; }
+    }
+    return -1;
+};
