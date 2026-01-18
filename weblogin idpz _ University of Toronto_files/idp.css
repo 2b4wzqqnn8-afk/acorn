@@ -1,0 +1,332 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    color:#002A5C;
+}
+p{
+    text-align: justify;
+}
+h1, h2, h3,h4,h5,h6 {
+  font-family: 'Open Sans Condensed',sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color:inherit;
+}
+img {
+    max-width: 100%;
+}
+a{
+    color:#002A5C;
+}
+.page {
+    font-size: 13.5px;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/************** Page layout *************************/
+.page{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "header"
+        "main"
+        "aside"
+        "footer";
+}
+
+@media screen and (min-width: 800px){
+   .login-page, .error-page, .warning-page {
+    grid-template-areas: 
+     "header header header"
+     "main aside aside"
+     "footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr;
+   } 
+}
+
+header {
+    grid-area: header;
+    margin-top: 20px;
+}
+footer{
+    grid-area: footer;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+
+/********************* header **************************/
+.page-title {
+    padding: 10px 10px;
+    background: linear-gradient(to right, #002a5c 0%,#5c6c8d 100%);
+    color: white;
+}
+.page-title h1 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/********************* footer **************************/
+footer {
+    border-top: 1px solid #cecece;
+    padding: 10px 0;
+}
+.footer-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content:right;
+    flex-direction: column;
+}
+.footer-list > li {
+    padding: 0 10px 0 10px;
+}
+@media screen  and (min-width: 600px){
+    .footer-list{
+        flex-direction: row;
+    }
+}
+
+/********************** main *********************/
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+
+.alert {
+    color: #5A4826;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.alert p {
+   padding-bottom: 8px; 
+}
+.alert-note {
+    color: rgb(0, 42, 92);
+    background-color: #e5e9ee;
+}
+.alert-warning {
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+}
+.alert-danger {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.rpui {
+    padding: 15px;
+}
+/********************** login-box *********************/
+.login-box {
+    background-color: #e5e9ee;
+}
+.login-box label {
+    font-weight: bold;
+}
+
+.login-box form {
+    padding: 20px;
+}
+.login-box .form-group{
+    margin-bottom: 20px;
+}
+.login-box input {
+    border: 1px solid #667f9d;
+    max-width: 300px;
+    border-radius: 4px;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    /*background-color: rgb(232, 240, 254);*/
+    background-color: white;
+}
+#login-btn {
+    box-shadow: none;
+    color: white;
+    text-shadow: none;
+    border: medium none;
+    background-color: #002A5C;
+    border-radius: 3px 3px 3px 3px;
+    font-size: 18px;
+    padding: 10px 16px;
+    line-height: 1.33;
+    cursor: pointer;
+    user-select: none;
+}
+#login-btn img {
+    width: 24px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/********************** tab widget *********************/
+.tab-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab {
+    flex-grow: 1;
+    border-radius: 5px;
+    border: 0;
+    padding: 15px 13px;
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    color: inherit;
+    font-size: 13.5px;
+    background-color: inherit;
+}
+
+.tab:hover {
+    background-color: lightgrey;
+}
+
+.tab-selected {
+    background-color: #002a5c;
+    color: white;
+}
+
+.tab-selected:hover {
+    background-color: #002a5c;
+}
+
+.tab-panel {
+    background: linear-gradient(to bottom, #e5f3f7 0%, #ffffff 100%);
+    border-top: 5px solid #ccd4de;
+    padding: 30px;
+    display: none;
+}
+
+.tab-panel-warning {
+    background: linear-gradient(to bottom, #ebd9d9 0%, #ffffff 100%);
+    border-top: 5px solid #990000;
+    display: block;
+}
+
+.tab-panel-active {
+    display: block;
+}
+
+.tab-panel h2 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.tab-panel a {
+    text-decoration: none;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+.tab-panel p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tab-panel strong {
+   font-weight: bold; 
+}
+
+.tab-panel .caution {
+    font-weight: bold; 
+    color: rgb(106, 42, 41); 
+    background-color: rgb(242,222,222);
+}
+
+/************** accordion widget *****************/
+.accordion {
+    width: 100%;
+    text-align: left;
+    color: #444;
+    padding: 18px;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: #ccd4de;
+    border-color: #b2bfce;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bolder;
+    border-radius: 5px;
+}
+
+.accordion::after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.accordion-expanded,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion-expanded::after {
+    content: '\2796';
+}
+
+.accordion-panel {
+    background-color: white;
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/************* ut color bar *****************/
+.ut-color-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 5px;
+}
+
+.ut-color-bar>span {
+    flex-grow: 1;
+}
+
+.utm-bar {
+    background: #46bea3;
+}
+
+.utsg-bar {
+    background-color: #b7b71f;
+}
+
+.utsc-bar {
+    background-color: #40004c;
+}
+
+/************** check list ************/
+.green-check-list{
+    list-style: none;
+}
+.green-check-list > li{
+    background: url("../img/green-check.png") no-repeat left top;
+    padding-left: 40px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 1.5;
+    font-weight: 400;
+}

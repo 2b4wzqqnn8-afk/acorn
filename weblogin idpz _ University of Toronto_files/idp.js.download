@@ -1,0 +1,77 @@
+window.onload = function(){
+    // not run for old browsers
+    if (typeof document.querySelectorAll !== "function"){
+        return;
+    }
+    // initialize tab wigets
+    var init_tab = function() {
+        var tablists = document.querySelectorAll('.tab-list');
+        for (var i=0; i<tablists.length; i++){
+            var tablist = tablists[i];
+            tablist.setAttribute("role", "tablist");
+            var tabs = tablist.querySelectorAll('.tab');
+            var panels = tablist.parentElement.querySelectorAll('.tab-panel');
+
+            // select a tab
+            var selectTab = function(index){
+                for(var i=0; i<tabs.length; i++){
+                    var tab = tabs[i];
+                    tab.classList.remove("tab-selected");
+                    tab.setAttribute("aria-selected", "false");
+                }
+                for(var i=0; i<panels.length; i++){
+                    var panel = panels[i];
+                    panel.classList.remove("tab-panel-active");
+                }
+
+                if (index >=0 && index<tabs.length ) {
+                    tabs[index].classList.add("tab-selected");
+                    tabs[index].setAttribute("aria-selected", "true");
+                    panels[index].classList.add("tab-panel-active");
+                }
+            }
+
+
+            for(var i=0; i<tabs.length; i++){
+                var tab = tabs[i];
+                tab.setAttribute("role", "tab");
+                if (tab.classList.contains("tab-selected")) {
+                    selectTab(i);
+                }
+                tab.onclick = function () {
+                    var index = i;
+                    return function(){
+                        selectTab(index);
+                    }
+                }(i);
+            }
+        }
+    };
+    // initalize accordion widgets
+    // enable ARIA
+    var init_accordion = function(){
+        var accs = document.querySelectorAll('.accordion');
+        for(var i=0; i<accs.length; i++){
+            acc = accs[i];
+            if (acc.classList.contains("accordion-expanded")) {
+                acc.setAttribute("aria-expanded", "true");
+            } else {
+                acc.setAttribute("aria-expanded", "false");
+            }
+            acc.onclick = function () {
+                this.classList.toggle("accordion-expanded");
+                var panel = this.nextElementSibling;
+                if (panel.style.display == "block") {
+                    panel.style.display = "none";
+                    this.setAttribute("aria-expanded", "false");
+                } else {
+                    panel.style.display = "block";
+                    this.setAttribute("aria-expanded", "true");
+                }
+            };
+        }
+    }
+
+    init_tab();
+    init_accordion();
+};
